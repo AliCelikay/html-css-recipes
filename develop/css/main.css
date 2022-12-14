@@ -304,6 +304,13 @@ Navbar
   display: flex;
   /* stacked ontop one another */
   flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links{
+  height: 414px;
 }
 
 .nav-link{

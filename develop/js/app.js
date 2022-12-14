@@ -1,3 +1,4 @@
+// function to grab the class name of elements
 const getElement = (selector) => {
   const element = document.querySelector(selector)
 
@@ -7,9 +8,11 @@ const getElement = (selector) => {
   )
 }
 
-const links = getElement('.nav-links')
-const navBtnDOM = getElement('.nav-btn')
+// grabbing specific class names
+const links = getElement('.nav-links');
+const navBtnDOM = getElement('.nav-btn');
 
+//attaching an event listener on the class for navBtn to add another class on the nav-links
 navBtnDOM.addEventListener('click', () => {
   links.classList.toggle('show-links')
 })
