@@ -17,6 +17,9 @@ navBtnDOM.addEventListener('click', () => {
   links.classList.toggle('show-links')
 })
 
+// selecting date element
 const date = getElement('#date')
+// function for getting the current year
 const currentYear = new Date().getFullYear()
+// adding the year into the footer
 date.textContent = currentYear

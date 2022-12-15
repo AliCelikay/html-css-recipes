@@ -258,6 +258,7 @@ ul {
 /*
 =============== 
 Navbar
+**find the correct way to toggle navbar**
 ===============
 */
 
@@ -265,7 +266,7 @@ Navbar
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue;
+  /* background: blue; */
 }
 
 .nav-center{
@@ -273,7 +274,7 @@ Navbar
   width: 90vw;
   /* 1120px nav center will never be greater than 1120px*/
   max-width: var(--max-width);
-  background: red;
+  /* background: red; */
 }
 
 .nav-header{
@@ -330,3 +331,91 @@ Navbar
 .contact-link a{
   padding: 0.15rem 1 rem;
 }
+
+
+@media screen and (min-width:992px) {
+  .nav-btn{
+    display: none;
+  }
+
+  .navbar{
+    height: 6rem;
+  }
+
+  .nav-center{
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-header{
+    height: auto;
+    margin-right: 2rem;
+  }
+
+  .nav-links{
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    /* background: red; */
+  }
+
+  .nav-link{
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  
+  .contact-link{
+    margin-left: auto;
+    /* margin-right: 0; */
+  }
+  
+}
+
+/*
+=============== 
+Page
+===============
+*/
+.page{
+  background: red;
+  width: 90vw;
+  /* also used in nav center */
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: calc(100vh -(6rem + 4rem)) !important;
+}
+
+
+/*
+=============== 
+Footer
+===============
+*/
+.page-footer{
+  height: 4rem;
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.page-footer p{
+  /* paragraph causes margin on bottom */
+  margin-bottom: 0px;
+}
+
+.footer-logo, .page-footer a{
+  color: var(--primary-500);
+}
+
+/*
+=============== 
+Footer
+===============
+*/
